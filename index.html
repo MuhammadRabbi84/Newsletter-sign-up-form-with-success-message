@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  
+</head>
+<body>
+
+  <main>
+
+    <div class="main-container">
+
+      <div class="form-container">
+        <section class="illustration">
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="illustration" class="mb-illustration">
+          <img src="assets/images/illustration-sign-up-tablet.svg" alt="illustration" class="tb-illustration hidden">
+          <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration" class="ds-illustration hidden">
+        </section>
+
+        <section class="sign_up-form">
+          <h1 class="title form-title">Stay updated!</h1>
+          <p class="form-desc desc">Join 60,000+ product managers receiving monthly updates on:</p>
+
+          <div class="instructions ds-flex">
+            <article class="ds-flex">
+              <img src="assets/images/icon-success.svg" alt="check-mark">
+              <p class="desc">Product discovery and building what matters</p>
+            </article>
+
+            <article class="ds-flex">
+              <img src="assets/images/icon-success.svg" alt="check-mark">
+              <p class="desc">Measuring to ensure updates are a success</p>
+            </article>            
+            
+            <article class="ds-flex">
+              <img src="assets/images/icon-success.svg" alt="check-mark">
+              <p class="desc">And much more!</p>
+            </article>           
+          </div>
+        
+          <form class="subscribe-form" id="subscribeForm" novalidate>
+            <label for="email">Email address</label>
+            <p class="error-msg">Valid email required</p>
+            <input class="email" type="email" name="email" id="email" placeholder="email@company.com">
+            <button class="subscribe-btn button" id="subscribeBtn" type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </section>
+      </div>
+      
+      <div class="success-container hidden">
+        <div class="success">
+          <div class="success-message">
+            <img src="assets/images/icon-success.svg" alt="success">
+            <h1 class="title success-title">Thanks for subscribing!</h1>
+            <p class="desc success-desc">  
+              A confirmation email has been sent to <span class="user-email"></span>.  
+              Please open it and click the button inside to confirm your subscription.
+            </p>
+          </div>
+          <button class="dismiss-btn button" id="dismissBtn" type="button">Dismiss message</button>
+        </div>
+      </div>
+      
+      <div class="attribution hidden">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/MuhammadRabbi84" target="_blank">Muhammad Rabbi</a>.
+      </div>
+
+    </div> 
+
+  </main>
+
+  <script src="script/script.js"></script>
+
+</body>
+</html>

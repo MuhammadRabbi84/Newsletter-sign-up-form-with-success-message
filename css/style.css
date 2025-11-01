@@ -1,0 +1,160 @@
+:root{
+    --cl-primary-red: hsl(4, 100%, 67%);
+    --cl-neutral-blue-800: hsl(234, 29%, 20%);
+    --cl-neutral-blue-700: hsl(235, 18%, 26%);
+    --cl-neutral-grey: hsl(0, 0%,58%);
+    --cl-neutral-white: hsl(0, 0%, 100%);
+    --fFamily: "Roboto",sans-serif;
+}
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    font-family: var(--fFamily);
+    background-color: var(--cl-neutral-blue-700);
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.ds-flex{
+    display: flex;
+}
+.main-container{
+    background-color: var(--cl-neutral-white);
+}
+.desc{
+    font-size: 0.875rem;
+    color: var(--cl-neutral-blue-700);
+    line-height: 1.5;
+    font-weight: 450;
+}
+.illustration img{
+    width: 100%;
+}
+.sign_up-form{
+    padding: 2rem 1.4rem;
+}
+.title{
+    font-size: 1.75rem;
+    color: var(--cl-neutral-blue-800);
+}
+.form-desc{
+    padding: 1rem 0 1.5rem 0;
+}
+.instructions{
+    gap: 8px;
+    flex-direction: column;
+    padding-block-end: 1.7rem;
+}
+.instructions article{
+    gap: 1rem;
+    align-items: flex-start;
+}
+.instructions img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.email,.button{
+    width: 100%;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    height: 3.125rem;
+    padding-inline: 1rem;
+}
+.subscribe-form{
+    position: relative;
+}
+label{
+    font-size: 0.813rem;
+    color: var(--cl-neutral-blue-800);
+    font-weight: 600;
+    display: inline-block;
+    padding-block-end: 8px;
+}
+.error-msg{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 0.688rem;
+    color: var(--cl-primary-red);
+    font-weight: 700;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.email{
+    border: 2px solid var(--cl-neutral-grey);
+    margin-block-end: 1.2rem;
+    color: var(--cl-neutral-blue-800);
+}
+.subscribe-form.show-error .email{
+    border-color: var(--cl-primary-red);
+    box-shadow: 0 0 5px var(--cl-primary-red);
+    color: var(--cl-primary-red);
+}
+.subscribe-form.show-error .error-msg{
+    pointer-events: auto;
+    opacity: 1;
+}
+.button{
+    border: none;
+    outline: none;
+    color: var(--cl-neutral-white);
+    background: var(--cl-neutral-blue-800);
+    font-weight: 700;
+}
+.success-container{
+    height: 100vh;
+    padding: 8rem 1.4rem 2rem 1.4rem;
+}
+.form-container.hide-form{
+    display: none;
+}
+.success-container.show-success{
+    display: block;
+}
+.success{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.success-message img{
+    height: 3.125rem;
+    width: 3.125rem;
+}
+.success-title{
+    padding-block: 1.5rem;
+    line-height: 1.1;
+}
+.user-email{
+    font-weight: 700;
+    color: var(--cl-neutral-blue-800);
+}
+.attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.688rem; 
+    color: hsl(334, 94%, 64%);
+    display: none;
+    
+}
+.attribution a {
+    color: var(--cl-neutral-white);
+    transition: all 0.3s ease;
+}

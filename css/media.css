@@ -1,0 +1,94 @@
+@media screen and (min-width: 26.563rem) {
+    body{
+        padding: 2rem;
+    }
+    .mb-illustration{
+        display: none;
+    }
+    .tb-illustration{
+        display: block;
+    }
+    .main-container{
+        max-width: 26.563rem;
+        margin: 0 auto;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width: 53.125rem) {
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-container{
+        padding: 1.3rem;
+        border-radius: 1.3rem;   
+        max-width: 100%; 
+    }
+    .tb-illustration{
+        display: none;
+    }
+    .ds-illustration{
+        display: block;
+    }
+    .form-container{
+        display: flex;
+        align-items: center;
+    }
+    .sign_up-form{
+        order: 1;
+        width: 28.125rem;
+        padding-inline-end: 2.7rem;
+    }
+    .illustration{
+        order: 2;
+        width: 21.875rem;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    .form-container .desc{
+        font-size: 1rem;
+        color: var(--cl-neutral-blue-800);
+        line-height: 1.3;
+    }
+    .form-desc{
+        padding: 1.5rem 0 0 0;
+    }
+    .instructions{
+        padding: 2rem 0 2rem 0;
+    }
+    .success-container{
+        width: 25rem;
+        height: 25rem;
+        padding: 1.5rem;
+    }
+    .success-title{
+        line-height: 1.15;
+        font-size: 2.8rem;
+    }
+    .email{
+        transition: border-color 0.3s ease;
+    }
+    .email:hover{
+        cursor: pointer;
+        border-color: var(--cl-neutral-blue-800);
+    }
+    .button{
+        cursor: pointer;
+    }
+    .button:hover{
+        background: linear-gradient(to left ,hsl(4, 100%, 67%) ,hsl(334, 94%, 64%));
+        box-shadow: 0 10px 25px hsl(4, 100%, 67%);
+    }
+    .attribution{
+        display: block;
+    }
+    .attribution a:hover{
+        text-decoration: none;
+        color:  hsl(0, 4%, 89%);
+
+    }
+}

@@ -118,19 +118,21 @@ label{
 }
 .success-container{
     height: 100vh;
-    padding: 8rem 1.4rem 2rem 1.4rem;
+    overflow: hidden;
+    padding: 2rem 1.5rem;
 }
 .form-container.hide-form{
     display: none;
 }
 .success-container.show-success{
-    display: block;
+    display: grid;
+    align-content: flex-end;
 }
 .success{
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 80vh;
 }
 .success-message img{
     height: 3.125rem;

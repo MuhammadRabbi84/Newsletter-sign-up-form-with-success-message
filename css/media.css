@@ -1,6 +1,10 @@
 @media screen and (min-width: 26.563rem) {
     body{
         padding: 2rem;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .mb-illustration{
         display: none;
@@ -13,15 +17,24 @@
         margin: 0 auto;
         border-radius: 1rem;
     }
+    .success-container.show-success{
+        /* align-content: center; */
+    }
+    .success-container{
+        width: 25rem;
+        height: 25rem;
+        padding: 1.5rem;
+    }
+    .success{
+        height: 100%;
+        width: 100%;
+    }
+    .success-desc{
+        padding-block-end: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 53.125rem) {
-    body{
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .main-container{
         padding: 1.3rem;
         border-radius: 1.3rem;   
@@ -60,11 +73,6 @@
     .instructions{
         padding: 2rem 0 2rem 0;
     }
-    .success-container{
-        width: 25rem;
-        height: 25rem;
-        padding: 1.5rem;
-    }
     .success-title{
         line-height: 1.15;
         font-size: 2.8rem;
@@ -89,6 +97,5 @@
     .attribution a:hover{
         text-decoration: none;
         color:  hsl(0, 4%, 89%);
-
     }
 }

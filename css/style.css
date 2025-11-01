@@ -34,6 +34,14 @@ img{
 }
 .main-container{
     background-color: var(--cl-neutral-white);
+    height: 100vh;
+    overflow: hidden;
+}
+.form-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .desc{
     font-size: 0.875rem;
@@ -43,9 +51,15 @@ img{
 }
 .illustration img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .sign_up-form{
-    padding: 2rem 1.4rem;
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 1.5rem;
 }
 .title{
     font-size: 1.75rem;
@@ -58,6 +72,7 @@ img{
     gap: 8px;
     flex-direction: column;
     padding-block-end: 1.7rem;
+    flex-basis: 40%;
 }
 .instructions article{
     gap: 1rem;
@@ -117,9 +132,9 @@ label{
     font-weight: 700;
 }
 .success-container{
-    height: 100vh;
-    overflow: hidden;
     padding: 2rem 1.5rem;
+    background-color: red;
+    margin: 2rem;
 }
 .form-container.hide-form{
     display: none;
@@ -132,7 +147,6 @@ label{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 80vh;
 }
 .success-message img{
     height: 3.125rem;

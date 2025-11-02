@@ -19,7 +19,7 @@ html{
 body{
     width: 100%;
     font-family: var(--fFamily);
-    background-color: var(--cl-neutral-blue-700);
+    overflow: hidden auto;
 }
 img{
     max-width: 100%;
@@ -33,10 +33,13 @@ img{
     display: flex;
 }
 .main-container{
-    background-color: var(--cl-neutral-white);
-    height: 100vh;
+    /*
+    min-height: 100vh;
     overflow: hidden;
-}
+    background-color: var(--cl-neutral-white);
+    align-items: flex-start;
+    justify-content: center; */
+} 
 .form-container{
     height: 100%;
     display: flex;
@@ -133,20 +136,16 @@ label{
 }
 .success-container{
     padding: 2rem 1.5rem;
-    background-color: red;
-    margin: 2rem;
+    position: absolute;
+    bottom: 0;
+    height: 80vh;
+    overflow: hidden;
 }
 .form-container.hide-form{
     display: none;
 }
 .success-container.show-success{
-    display: grid;
-    align-content: flex-end;
-}
-.success{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
 }
 .success-message img{
     height: 3.125rem;
@@ -155,6 +154,11 @@ label{
 .success-title{
     padding-block: 1.5rem;
     line-height: 1.1;
+}
+.dismiss-btn{
+    position: absolute;
+    bottom: 2rem;
+    width: calc(100% - 3rem);
 }
 .user-email{
     font-weight: 700;
@@ -167,8 +171,7 @@ label{
     transform: translateX(-50%);
     font-size: 0.688rem; 
     color: hsl(334, 94%, 64%);
-    display: none;
-    
+    display: none;    
 }
 .attribution a {
     color: var(--cl-neutral-white);

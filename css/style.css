@@ -32,14 +32,6 @@ img{
 .ds-flex{
     display: flex;
 }
-.main-container{
-    /*
-    min-height: 100vh;
-    overflow: hidden;
-    background-color: var(--cl-neutral-white);
-    align-items: flex-start;
-    justify-content: center; */
-} 
 .form-container{
     height: 100%;
     display: flex;
